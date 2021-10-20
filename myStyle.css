@@ -34,3 +34,44 @@ h5{
 	
 	
 }
+
+nav
+{
+	background-color:#246B65 ;
+	line-height: 200%;
+	display: block;
+}
+
+nav li {
+	
+	display: inline;
+	padding-right:40px;
+	list-style-type: none;
+	
+}
+
+nav a:link
+{
+	color:white;
+	text-decoration: none;
+}
+
+nav a:visited
+{
+	color:white;
+}
+
+nav a:hover
+{
+	text-decoration:underline;
+	
+}
+
+nav a:active
+{
+	text-decoration:underline;
+	color:red;
+}
+
+
+
