@@ -3,6 +3,8 @@ h1{
 	background-color: #246B65;
 	text-align: center;
 	font-size: 48px;
+	border-style:double;
+	padding:10px;
 	
 }
 			
@@ -10,6 +12,10 @@ h2{
 	color: #0FA219;
 	background-color: #2E4873;
 	font-size: 24px;
+	border-style:outset;
+	border-color:#08419C;
+	border-width:5px;
+	padding: 5px;
 }
 
 a
@@ -24,10 +30,28 @@ body
 	font-family: "gill-sans", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-
 	
 	
 }
+p
+{
+	
+	margin-left:10px;
+	margin-right:10px;
+	
+}
+
+img
+{
+	float:left;
+	border-style:outset;
+	border-color:#08419C;
+	margin-right:10px;
+	
+	
+}
+
+
 
 
 h3 {
@@ -51,6 +75,8 @@ nav
 	background-color:#246B65 ;
 	line-height: 200%;
 	display: block;
+	border-style:solid;
+	border-color: #08419C;
 }
 
 nav li {
@@ -83,6 +109,68 @@ nav a:active
 	text-decoration:underline;
 	color:red;
 }
+
+
+@keyframes walk {
+	to
+	{
+		transform : translate( 120vw,0);
+	}
+}
+
+
+@keyframes hop {
+	from
+	{
+	bottom: 0;	
+	}
+	50%
+	{
+	bottom: 15px;	
+	}
+	to
+	{
+	bottom: 0;	
+	}
+}
+
+.cats > span
+{
+	background: url(./images/CatprotagR.png) 0/100% ;
+	width:64px;
+	height:64px;
+	position:fixed;
+	left:0;
+	z-index:10;
+	bottom:0;
+}
+
+.cats > span:nth-child(1)
+{
+animation: hop 0.5s infinite,walk 17s infinite;
+
+}
+
+.cats > span:nth-child(2)
+{
+animation: hop 0.5s infinite,walk 16s infinite;
+
+}
+
+.cats > span:nth-child(3)
+{
+animation: hop 0.5s infinite,walk 14s infinite;
+
+}
+
+.cats > span:nth-child(4)
+{
+animation: hop 0.5s infinite,walk 15s infinite;
+
+}
+
+
+
 
 
 
